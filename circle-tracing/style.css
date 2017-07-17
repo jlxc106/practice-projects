@@ -1,0 +1,23 @@
+.square{
+  width: 10vw;
+  float: left;
+  box-sizing: border-box;
+  height: 10vw;
+  border: 2px solid red;
+  position: relative;
+}
+
+.square:nth-child(3){
+  clear: left;
+}
+
+#target{
+  height: 25%;
+  width: 25%;
+  background-color: lightblue;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
