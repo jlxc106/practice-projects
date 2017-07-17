@@ -1,4 +1,5 @@
 # Game of War
+
 - Start with one deck of cards
   - The deck should be split evenly between four players (each player receives a random assortment)
   - Player should be able to "flip" the top card of their pile and compare against the top card of the other three players.
