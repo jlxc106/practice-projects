@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phone System</title>
+	<style type="text/css">
+		#phoneNumbers{
+			width: 75%;
+			margin: 0 auto;
+			text-align: center;
+		}
+		#phoneNumbers > button{
+			background-color: pink;
+			width: 33%;
+			height: 10vh;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+</head>
+<body>
+<div id="phoneNumbers">
+	<button>1</button><button>2</button><button>3</button>
+	<button>4</button><button>5</button><button>6</button>
+	<button>7</button><button>8</button><button>9</button>
+	<button>0</button>
+</div>
+</body>
+	<script>
+		$("#phoneNumbers>button").on('click',handleNumberPress);
+		function handleNumberPress(){
+			var buttonPressed = $(this).text();
+			responsiveVoice.speak("you pressed "+buttonPressed);
+		}
+	</script>
+</html>
